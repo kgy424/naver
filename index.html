@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naver Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <a href="#">
+            <img src="img/NAVER_CI_Green.png" alt="NAVER" id="logo">
+        </a>
+    </div><!-- //#header -->
+
+    <div id="wrapper">
+        <div id="content">
+            <!-- ID -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="id">아이디</label>
+                </h3>
+                <span class="box int_id">
+                    <input type="text" id="id" class="int" maxlength="20">
+                    <span class="step_url">@naver.com</span>
+                </span>
+                <span class="error_next_box e1">에러 출력</span>
+            </div>
+            <!-- ID  끗-->
+
+            <!-- PW1 -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="psw1">비밀번호</label>
+                </h3>
+                <span class="box int_pass">
+                    <input type="text" id="psw1" class="int" maxlength="16">
+                    <span id="alertTxt">사용불가</span>
+                    <img src="img/m_icon_pass.png" alt="pw" id="pswd1_img1" class="pswdImg">
+                </span>
+                <span class="error_next_box e2">
+                    에러 출력
+                </span>
+            </div>
+            <!-- PW1 끗 -->
+
+            <!-- PW2 -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="psw2">비밀번호 재확인</label>
+                </h3>
+                <span class="box int_pass_check">
+                    <input type="text" id="psw2" class="int" maxlength="20">
+                    <span id="alertTxt">사용불가</span>
+                    <img src="img/m_icon_check_disable.png" alt="pswd" id="pswd2_img1" class="pswdImg">
+                </span>
+                <span class="error_next_box e3">에러출력</span>
+            </div>
+            <!-- PW2 끗 -->
+
+            <!-- NAME -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="Name">이름</label>
+                </h3>
+                <span class="box int_name">
+                    <input type="text" id="Name" class="int" maxlength="20">
+                </span>
+                <span class="error_next_box e4">에러출력</span>
+            </div>
+            <!-- NAME 끗 -->
+
+            <!-- 생년월일 -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="yy">생년월일</label>
+                </h3>
+                <div id="bir_wrap">
+                    <!-- 연도 -->
+                    <div id="bir_yy">
+                        <div class="box">
+                            <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                        </div>
+                    </div>
+                    <!-- 월 -->
+                    <div id="bir_mm">
+                        <span class="box">
+                            <select id="mm" class="sel">
+                                <option>월</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </span>
+                    </div>
+                    <!-- 일 -->
+                    <div id="bir_dd">
+                        <span class="box">
+                            <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                        </span>
+                    </div>
+                </div><!-- //#bir_wrap -->
+                <span class="error_next_box e5">에러출력</span>
+            </div>
+            <!-- 생년월일 끗 -->
+
+            <!-- 성별 -->
+            <div>
+                <div class="join_tit">
+                    <h3>
+                        <label for="gender">성별</label>
+                    </h3>
+                    <span class="box gender_code">
+                        <select id="gender" class="sel">
+                            <option>성별</option>
+                            <option value="M">남자</option>
+                            <option value="ㄹ">여자</option>
+                        </select>
+                    </span>
+                    <span class="error_next_box e6">필수정보입니다.</span>
+                </div>
+            </div>
+            <!-- 성별 끗 -->
+
+            <!-- 이메일 -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="email">본인확인 이메일 <span class="optional">(선택)</span></label>
+                </h3>
+                <span class="box int_email">
+                    <input type="text" id="email" class="int" maxlength="100" placeholder="선택입력">
+                </span>
+                <span class="error_next_box e7">이메일 주소를 다시 확인해주세요.</span>
+            </div>
+            <!-- 이메일 끗 -->
+
+            <!-- mobile -->
+            <div>
+                <h3 class="join_tit">
+                    <label for="phoneNo">휴대전화</label>
+                </h3>
+                <span class="box int_mobile">
+                    <input type="text" id="phoneNo" class="int" maxlength="16" placeholder="전화번호 입력">
+                </span>
+                <span class="error_next_box e8">에러출력</span>
+            </div>
+            <!-- mobile fin -->
+
+            <!-- button -->
+            <div class="btn_area">
+                <button type="button" id="btnjoin">
+                    <span>가입하기</span>
+                </button>
+            </div>
+            <!-- button fin -->
+
+        </div><!-- //#content -->
+    </div><!-- //#wrapper -->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
